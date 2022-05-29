@@ -19,6 +19,7 @@
 		<protobuf.version>3.19.1</protobuf.version>
 		<springfox-protobuf.version>1.4-SNAPSHOT</springfox-protobuf.version>
 		<jackson-datatype-protobuf.version>0.9.11-jackson2.8</jackson-datatype-protobuf.version>
+		<springdoc-protobuf-schema.version>0.0.1</springdoc-protobuf-schema.version>
 
 		<!-- plugins -->
 		<protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
@@ -52,6 +53,12 @@
 			<groupId>com.hubspot.jackson</groupId>
 			<artifactId>jackson-datatype-protobuf</artifactId>
 			<version>${jackson-datatype-protobuf.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.eternalwind</groupId>
+			<artifactId>springdoc-protobuf-schema</artifactId>
+			<version>${springdoc-protobuf-schema.version}</version>
 		</dependency>
 
 		<dependency>

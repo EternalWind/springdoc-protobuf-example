@@ -7,8 +7,16 @@ option java_package = "io.eternalwind.springdocprotobufexample";
 message ProtoRequest {
     string name = 1;
     repeated string values = 2;
+
+    ProtoEnum protoEnum = 3;
+    repeated ProtoEnum protoEnumList = 4;
 }
 
 message ProtoResponse {
     string result = 1;
+}
+
+enum ProtoEnum {
+    ENUM_VALUE_1 = 0;
+    ENUM_VALUE_2 = 1;
 }
